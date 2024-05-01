@@ -1,7 +1,7 @@
 # SWE / Prompt Engineer Take-Home Assignment
 
- 
-**LLMs Background**
+
+## LLMs Background
 
 Large Language Models (LLMs) unlock many new opportunities in legal applications engineering. Machine learning tasks such as data extraction, classification, summarization, and text generation have traditionally been very time-intensive undertakings. LLMs make these tasks much easier, through the act of “prompting” the model. At their core, LLMs are given some text and then generate a “completion” of words that follow the initial text. This initial text is called the “prompt”. It typically includes instructions for the model as well as whatever text or data we want the model to analyze. For example, the following prompt could be used to translate some text:
 
@@ -41,8 +41,8 @@ Please translate the following from English to {{to_language}}:
 
 With just a few extra lines of glue code, this template can form the basis of a universal translator application (this is, of course, assuming the underlying LLM has such translation capabilities – but they often do!).
 
- 
-**Assignment**
+
+## Assignment
 
 The goal of this project is to use the LLM to identify negative treatment within a set of opinions. Negative treatment occurs when one case overrules or otherwise limits the holding of a prior case. The deliverable is a Python function that can tell the caller whether a particular case on Casetext is negatively treating any other cases.
 
@@ -70,8 +70,8 @@ For example, once you deliver the function, we should be able to run:
 treatments = extract_negative_treatments(slug='in-re-lee-342013')
 ```
 
- 
-**Tips and Hints**
+
+## Tips and Hints
 
 - Consider using `requests` and `BeautifulSoup` libraries to fetch the HTML of the case and then to parse the resulting HTML.
 - Consider which OpenAI model you will use. They are listed [here](https://platform.openai.com/docs/models). If you’re using your own OpenAI account, `gpt-3.5-turbo` is your best bet.
@@ -83,6 +83,6 @@ treatments = extract_negative_treatments(slug='in-re-lee-342013')
 - Consider using [jinja templates](https://jinja.palletsprojects.com/en/3.1.x/) or [f-strings](https://realpython.com/python-f-strings/) to create and use prompt templates.
 
 
-**Evaluation**
+## Evaluation
 
 We will evaluate the code you submit for fitness for purpose and general quality. Furthermore, we will test the effectiveness of the LLM prompts by inputting slugs we have set aside and checking the output of the `extract_negative_treatments` function. Think of this as set-aside test data.
