@@ -84,5 +84,17 @@ treatments = extract_negative_treatments(slug='in-re-lee-342013')
 
 
 ## Evaluation
-
+ 
 We will evaluate the code you submit for fitness for purpose and general quality. Furthermore, we will test the effectiveness of the LLM prompts by inputting slugs we have set aside and checking the output of the `extract_negative_treatments` function. Think of this as set-aside test data.
+ 
+While these are not required, feel free to add:
+- unit tests
+- discussion of different prompting approaches you tried
+- a README
+- package management, like requirements or poetry files
+- anything else that you think might be useful
+ 
+ 
+## Submitting the assignment
+ 
+Please clone this repository, complete the assignment, and share your repository with github user `cmorbidelli`. Please do not submit iPython/Jupyter notebooks or email the code directly.
