@@ -97,4 +97,4 @@ While these are not required, feel free to add:
  
 ## Submitting the assignment
  
-Please clone this repository, complete the assignment, and share your repository with github users `alandelevieTR` and `cmorbidelli`. Please do not submit iPython/Jupyter notebooks or email the code directly.
+Please clone this repository, complete the assignment, and share your repository with github users `alandelevieTR`, `cmorbidelli` & `MananShahTR`. Please do not submit iPython/Jupyter notebooks or email the code directly.
