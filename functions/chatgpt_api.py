@@ -27,4 +27,5 @@ def get_response_from_gpt(decision: str) -> str | dict:
         response_format=NegativeTreatment
     )
 
+    #return as a prettier string
     return json.dumps(json.loads(response.choices[0].message.content), indent=2)
