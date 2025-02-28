@@ -9,7 +9,7 @@ load_dotenv('.env')
 
 client = OpenAI(api_key=os.environ.get("OPENAI_KEY"))
 
-def get_response_from_gpt(decision: str) -> str | dict:
+def get_response_from_gpt(decision: str) -> str:
     #Using 4o-mini as its cheaper and better than 3.5-turbo
     #Also accepts strutured outputs
     response = client.beta.chat.completions.parse(
